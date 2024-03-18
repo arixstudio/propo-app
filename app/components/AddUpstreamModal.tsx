@@ -128,7 +128,7 @@ const AddUpstreamModal = ({
 
         <Flex gap="2" mt="4" justify="end">
           <Dialog.Close>
-            <Button variant="soft" color="gray" disabled={loading && true}>
+            <Button variant="soft" color="gray" disabled={loading}>
               Cancel
             </Button>
           </Dialog.Close>
@@ -136,7 +136,7 @@ const AddUpstreamModal = ({
             variant="soft"
             color="blue"
             onClick={() => handleAddUpstream()}
-            disabled={loading && true}
+            disabled={loading}
           >
             {loading ? "Adding..." : "Add"}
           </Button>

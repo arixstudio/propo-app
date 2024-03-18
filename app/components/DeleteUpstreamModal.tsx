@@ -65,7 +65,7 @@ const DeleteUpstreamButton = ({
 
         <Flex gap="2" mt="4" justify="end">
           <AlertDialog.Cancel>
-            <Button variant="soft" color="gray" disabled={loading && true}>
+            <Button variant="soft" color="gray" disabled={loading}>
               Cancel
             </Button>
           </AlertDialog.Cancel>
@@ -73,7 +73,7 @@ const DeleteUpstreamButton = ({
             variant="soft"
             color="red"
             onClick={() => handleDeleteUpstream()}
-            disabled={loading && true}
+            disabled={loading}
           >
             {loading ? "Removing..." : "Remove"}
           </Button>
