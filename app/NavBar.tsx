@@ -26,7 +26,7 @@ const Navbar = () => {
               "text-zinc-900": href === currentPath,
               "text-zinc-500": href !== currentPath,
               "hover:text-zinc-800 transition-colors": true,
-            })}          >
+            })}>
             {label}
           </Link>
         ))}
