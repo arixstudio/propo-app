@@ -37,14 +37,7 @@ WHERE cp.provider_id = $1`;
     const { rows: providers } = await query(queryString, [company_id]);
     return NextResponse.json(providers, { status: 200 });
   } catch (error) {
-    // More accurate error handling
-    const isDevelopment = process.env.NODE_ENV === "development";
-    const errorMessage =
-      isDevelopment && error instanceof Error
-        ? error.message
-        : "An error occurred while processing your request.";
-    const statusCode = error instanceof Error ? 500 : 500; // Use appropriate status code
-
-    return NextResponse.json({ error: errorMessage }, { status: statusCode });
+    const errorMessage = "An error occurred while processing your request.";
+    return NextResponse.json({ error: errorMessage }, { status: 500 });
   }
 }
