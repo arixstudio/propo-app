@@ -93,7 +93,7 @@ const UpstreamsModal = ({
     const fetchCompanies = async () => {
       await axios
         .get<Upstream[]>(
-          `/api/upstream/providers?company_id=${company?.id}&type=${upStreamType}&refresh=true`
+          `/api/upstream/providers?company_id=${company?.id}&type=${upStreamType}&refresh={refreshUpstreams}`
         )
         .then((response) => {
           setUpstreams(response.data);
