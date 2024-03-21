@@ -1,6 +1,3 @@
-# Let's create a README.md file with the provided content
-
-readme_content = """
 # Next.js Application
 
 This project is a Next.js application designed to manage content providers. It includes functionality for listing providers, viewing provider details, and deleting providers from the database.
