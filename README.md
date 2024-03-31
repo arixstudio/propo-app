@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Application
+
+This project is a Next.js application designed to manage content providers. It includes functionality for listing providers, viewing provider details, and deleting providers from the database.
 
 ## Getting Started
 
-First, run the development server:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-```bash
+### Prerequisites
+
+What things you need to install the software and how to install them:
+
+- Node.js (https://nodejs.org/)
+- A package manager like npm (comes with Node.js) or Yarn
+
+### Installing
+
+A step-by-step series of examples that tell you how to get a development environment running:
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+
+### Install dependencies:
+
+npm install
+# or
+yarn install
+
+### Run the development server:
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open http://localhost:3000 with your browser to see the result.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Deployment
 
-## Learn More
+Add additional notes about how to deploy this on a live system. Depending on your deployment target, the steps may vary. For example, deploying to Vercel, a popular platform for Next.js apps, would involve:
 
-To learn more about Next.js, take a look at the following resources:
+    Setting up a project on Vercel
+    Connecting your GitHub repository
+    Configuring environment variables
+    Deploying your application
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Built With
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    Next.js - The React framework used
+    TypeScript - Used for static type checking
 
-## Deploy on Vercel
+Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+Versioning
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+We use SemVer for versioning. For the versions available, see the [tags on this repository](<repository-url>/tags).
+Authors
+
+Your Name - Initial work - YourUsername
+
+See also the list of [contributors](<repository-url>/contributors) who participated in this project.
+License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
+Acknowledgments
+
+
