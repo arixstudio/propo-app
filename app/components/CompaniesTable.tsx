@@ -22,8 +22,8 @@ const CompaniesTable = () => {
 
   useEffect(() => {
     setLoading(true);
-    const fetchCompanies = async () => {
-      await axios
+    const fetchCompanies = () => {
+      axios
         .get<Company[]>("/api/companies")
         .then((response) => {
           setCompanies(response.data);

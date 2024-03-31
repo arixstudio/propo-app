@@ -29,8 +29,8 @@ const DeleteUpstreamButton = ({
   const handleDeleteUpstream = () => {
     setLoading(true);
 
-    const deleteUpstream = async () => {
-      await axios
+    const deleteUpstream = () => {
+      axios
         .delete("/api/upstream/delete", {
           data: {
             subscriber_id: deleteUpstreamData?.subscriber_id.toString(),

@@ -63,8 +63,8 @@ const AddUpstreamModal = ({
 
   const handleAddUpstream = () => {
     setLoading(true);
-    const createUpstream = async () => {
-      await axios
+    const createUpstream = () => {
+      axios
         .post("/api/upstream/create", {
           subscriber_id: formData.subscriber_id.toString(),
           provider_id: formData.provider_id.toString(),

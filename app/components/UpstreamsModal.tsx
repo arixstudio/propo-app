@@ -90,8 +90,8 @@ const UpstreamsModal = ({
       setUpStreamTypeLable("Subscribers");
     }
 
-    const fetchCompanies = async () => {
-      await axios
+    const fetchCompanies = () => {
+      axios
         .get<Upstream[]>(
           `/api/upstream/providers?company_id=${company?.id}&type=${upStreamType}&refresh={refreshUpstreams}`
         )
